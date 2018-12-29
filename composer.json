@@ -1,7 +1,7 @@
 {
   "name": "patrikmokry/router",
   "description": "A fast PHP router, with route parameters",
-  "keywords": ["framework", "php", "php-router", "router"],
+  "keywords": ["framework", "routing", "router", "rest"],
   "license": "MIT",
   "authors": [
     {
@@ -10,11 +10,11 @@
     }
   ],
   "require": {
-    "php": "^7.1"
+    "php": "^7"
   },
   "autoload": {
     "psr-4": {
-      "PatrikMokry\\Router\\": ""
+      "PatrikMokry\\": "src/"
     }
   },
   "minimum-stability": "dev",
