@@ -1,0 +1,22 @@
+{
+  "name": "patrikmokry/router",
+  "description": "A fast PHP router, with route parameters",
+  "keywords": ["framework", "php", "php-router", "router"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Patrik Mokrý",
+      "email": "router@patrikmokry.sk"
+    }
+  ],
+  "require": {
+    "php": "^7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "PatrikMokry\\Router\\": ""
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
