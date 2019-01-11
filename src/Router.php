@@ -298,7 +298,7 @@ class Router
             list(, $shortcut) = $match;
             if (isset(self::$shortcuts[$shortcut])) {
                 // Try to get default value from shortcut
-                $default = null;
+                $default = false;
                 $shortcut = self::$shortcuts[$shortcut];
                 if (preg_match('~->(.*?)$~', $shortcut, $match)) {
                     $default = $match[1];
@@ -313,7 +313,7 @@ class Router
         }
         return [
             'shortcut' => self::$shortcuts['s'],
-            'default' => null
+            'default' => false
         ];
     }
 
