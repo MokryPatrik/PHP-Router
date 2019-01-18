@@ -536,6 +536,7 @@ class Router
 
         $request = $_SERVER['REQUEST_URI'];
         foreach (explode('/', $ROOT) as $key => $value) {
+            if ($value == '') continue;
             $request = preg_replace('~/' . $value . '~', '', $request, 1);
         }
 
