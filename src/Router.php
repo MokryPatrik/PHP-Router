@@ -541,6 +541,6 @@ class Router
         }
 
         self::$URL = $baseLink . '/';
-        self::$REQUEST = $request;
+        self::$REQUEST = explode('?', $request)[0];
     }
 }
