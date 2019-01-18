@@ -70,7 +70,7 @@ Router::any($route, $action);
 ~~~  
   
  > These helper methods are wrappers around `route($route, $action, $method = ["POST", "GET"])`  
- > Neither `$_PUT` neither `$_DELETE` does not exist so in your request you must define field with name `_method`
+ > Neither `$_PUT` nor `$_DELETE` does not exist so in your request you must define field with name `_method`
 
 ### Regex Shortcuts  
   

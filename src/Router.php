@@ -12,12 +12,12 @@ class Router
     /**
      * @var null $URL
      */
-    private static $URL = null;
+    public static $URL = null;
 
     /**
      * @var null $REQUEST
      */
-    private static $REQUEST = null;
+    public static $REQUEST = null;
 
     /**
      * @var array $params
