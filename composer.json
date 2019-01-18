@@ -16,7 +16,5 @@
     "psr-4": {
       "PatrikMokry\\": "src/"
     }
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+  }
 }

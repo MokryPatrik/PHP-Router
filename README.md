@@ -43,7 +43,7 @@ Router::post('example', function() {
     return 'This route responds to requests with the POST method at the path /example';  
 });  
   
-Router::execute($_SERVER['REQUEST_URI'], 'http://example.com/');  
+Router::execute(__DIR__);  
 ~~~  
 ~~~PHP
 // .htaccess
