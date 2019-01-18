@@ -116,7 +116,6 @@ Router::prefix('admin/', function() {
 });
 ~~~  
 
-
 ### Contributing
 
 1. Fork it ( https://github.com/MokryPatrik/PHP-Router/fork )
