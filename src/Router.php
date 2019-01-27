@@ -540,13 +540,18 @@ class Router
         $baseLink .= "://" . $_SERVER['SERVER_NAME'];
         $baseLink .= ($_SERVER['SERVER_PORT'] !== '80' ? ':' . $_SERVER['SERVER_PORT'] : '');
 
+        $baseRequest = '';
+
         $request = $_SERVER['REQUEST_URI'];
         foreach (explode('/', $ROOT) as $key => $value) {
             if ($value == '') continue;
+            if (preg_match('~/' . $value . '~', $request)) {
+                $baseRequest .= $value . '/';
+            }
             $request = preg_replace('~/' . $value . '~', '', $request, 1);
         }
 
-        self::$URL = $baseLink . '/';
+        self::$URL = $baseLink . '/' . $baseRequest;
         self::$REQUEST = explode('?', $request)[0];
     }
 }
