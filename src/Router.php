@@ -481,7 +481,7 @@ class Router
                 // If is post request
                 if (in_array('POST', $route['method']) || in_array('PUT', $route['method']) || in_array('DELETE', $route['method'])) {
                     $contentType = isset($_SERVER["CONTENT_TYPE"]) ? trim($_SERVER["CONTENT_TYPE"]) : '';
-                    if (strcasecmp($contentType, 'application/json') != 0) {
+                    if (strcasecmp($contentType, 'application/json') !== false) {
                         $post = json_decode(file_get_contents('php://input'), true);
                     } else {
                         $post = $_POST;
